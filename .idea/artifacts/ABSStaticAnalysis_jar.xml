@@ -1,0 +1,95 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="ABSStaticAnalysis:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ABSStaticAnalysis_jar</output-path>
+    <root id="archive" name="ABSStaticAnalysis.jar">
+      <element id="module-output" name="ABSStaticAnalysis" />
+      <element id="extracted-dir" path="D:/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.2/jackson-core-2.11.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/io/netty/netty-codec/4.1.51.Final/netty-codec-4.1.51.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/eclipse/jgit/org.eclipse.jgit/5.6.0.201912101111-r/org.eclipse.jgit-5.6.0.201912101111-r.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/springframework/spring-beans/5.2.8.RELEASE/spring-beans-5.2.8.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/com/google/code/gson/gson/2.9.0/gson-2.9.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/springframework/spring-oxm/5.2.8.RELEASE/spring-oxm-5.2.8.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.11.2/jackson-datatype-jsr310-2.11.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/io/netty/netty-buffer/4.1.51.Final/netty-buffer-4.1.51.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/io/netty/netty-handler/4.1.51.Final/netty-handler-4.1.51.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.3.3.RELEASE/spring-boot-starter-tomcat-2.3.3.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/springframework/spring-webmvc/5.2.8.RELEASE/spring-webmvc-5.2.8.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/apache/logging/log4j/log4j-api/2.13.3/log4j-api-2.13.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/com/github/virtuald/curvesapi/1.04/curvesapi-1.04.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/com/alibaba/fastjson/1.2.41/fastjson-1.2.41.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/com/github/javaparser/javaparser-symbol-solver-core/3.19.0/javaparser-symbol-solver-core-3.19.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/com/jcraft/jzlib/1.1.1/jzlib-1.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/glassfish/jakarta.el/3.0.3/jakarta.el-3.0.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/com/github/javaparser/javaparser-core/3.24.2/javaparser-core-3.24.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/com/google/guava/guava/30.1-jre/guava-30.1-jre.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/springframework/data/spring-data-keyvalue/2.3.3.RELEASE/spring-data-keyvalue-2.3.3.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/apache/poi/poi-ooxml/3.16/poi-ooxml-3.16.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/springframework/spring-jcl/5.2.8.RELEASE/spring-jcl-5.2.8.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/io/netty/netty-common/4.1.51.Final/netty-common-4.1.51.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/springframework/spring-core/5.2.8.RELEASE/spring-core-5.2.8.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/apache/poi/poi-ooxml-schemas/3.16/poi-ooxml-schemas-3.16.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/springframework/spring-web/5.2.8.RELEASE/spring-web-5.2.8.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.3.3.RELEASE/spring-boot-autoconfigure-2.3.3.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/springframework/boot/spring-boot-starter/2.3.3.RELEASE/spring-boot-starter-2.3.3.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/bouncycastle/bcpg-jdk15on/1.64/bcpg-jdk15on-1.64.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.3.3.RELEASE/spring-boot-starter-web-2.3.3.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.2/jackson-annotations-2.11.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/springframework/spring-tx/5.2.8.RELEASE/spring-tx-5.2.8.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/com/konghq/unirest-java/3.13.10/unirest-java-3.13.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/io/lettuce/lettuce-core/5.3.3.RELEASE/lettuce-core-5.3.3.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.37/tomcat-embed-websocket-9.0.37.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/io/netty/netty-transport/4.1.51.Final/netty-transport-4.1.51.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.2/jackson-databind-2.11.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/apache/poi/poi/3.16/poi-3.16.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/javassist/javassist/3.27.0-GA/javassist-3.27.0-GA.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/springframework/data/spring-data-redis/2.3.3.RELEASE/spring-data-redis-2.3.3.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/springframework/spring-expression/5.2.8.RELEASE/spring-expression-5.2.8.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/com/googlecode/javaewah/JavaEWAH/1.1.6/JavaEWAH-1.1.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.3.3.RELEASE/spring-boot-starter-json-2.3.3.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/springframework/data/spring-data-commons/2.3.3.RELEASE/spring-data-commons-2.3.3.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/yaml/snakeyaml/1.26/snakeyaml-1.26.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.13.3/log4j-to-slf4j-2.13.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/springframework/spring-aop/5.2.8.RELEASE/spring-aop-5.2.8.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/io/netty/netty-resolver/4.1.51.Final/netty-resolver-4.1.51.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/springframework/boot/spring-boot-starter-data-redis/2.3.3.RELEASE/spring-boot-starter-data-redis-2.3.3.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/com/jcraft/jsch/0.1.55/jsch-0.1.55.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/springframework/boot/spring-boot/2.3.3.RELEASE/spring-boot-2.3.3.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.3.3.RELEASE/spring-boot-starter-logging-2.3.3.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/apache/httpcomponents/httpasyncclient/4.1.5/httpasyncclient-4.1.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/slf4j/jul-to-slf4j/1.7.30/jul-to-slf4j-1.7.30.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/springframework/spring-context-support/5.2.8.RELEASE/spring-context-support-5.2.8.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/springframework/spring-context/5.2.8.RELEASE/spring-context-5.2.8.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.37/tomcat-embed-core-9.0.37.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/io/projectreactor/reactor-core/3.3.9.RELEASE/reactor-core-3.3.9.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/org/apache/httpcomponents/httpcore-nio/4.4.13/httpcore-nio-4.4.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.11.2/jackson-module-parameter-names-2.11.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.11.2/jackson-datatype-jdk8-2.11.2.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
