@@ -20,8 +20,8 @@ public class JarApp
             System.out.println("argument-reposPath error");
             System.exit(1);
         }
-        boolean status = ExtraUtils.extraDataInDir(reposPath);
-        if (status){
+        String status = ExtraUtils.extraDataInDir(reposPath);
+        if (!status.equals("parse error")){
             System.out.println("data extra successfully...");
         }
     }

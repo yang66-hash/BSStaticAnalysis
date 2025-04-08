@@ -8,6 +8,7 @@ import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -18,15 +19,18 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class ParseExcelUtils {
 
     public static void main(String[] args) {
-
-        List<ParseAttributes> parseAttributes = ParseExcelUtils.parseExcel("E:/work_space/newest-data.xls");
+        String reposPath = "D:/code/projects/refactor-projects/PropertyManagementCloud-master/PropertyManagementCloud-master";
+//
+        ExtraUtils.extraDataInDir(reposPath);
+        List<ParseAttributes> parseAttributes = ParseExcelUtils.parseExcel("D:/work_space/PropertyManagementCloud-master-data.xls");
         parseAttributes.forEach(attr->{
             System.out.println(attr.toString());
         });
-        outPutFinalExcel(parseAttributes);
+//        outPutFinalExcel(parseAttributes, "D:/work_space/PropertyManagementCloud-master-data.xls");
+        outPutFinalCSV(parseAttributes, "D:/work_space/PropertyManagementCloud-master-data.csv");
     }
 
-    private static List<ParseAttributes> parseExcel(String path){
+    public static List<ParseAttributes> parseExcel(String path){
         List<ParseAttributes> parseAttributes = new ArrayList<>();
         try {
             //创建工作簿
@@ -134,7 +138,7 @@ public class ParseExcelUtils {
      * @param attributes 处理完的数据
      * @return 将最终处理的数据存入新的excel中
      */
-    private static boolean outPutFinalExcel(List<ParseAttributes> attributes){
+    public static boolean outPutFinalExcel(List<ParseAttributes> attributes, String finalPath){
 
 
         HSSFWorkbook workbook = new HSSFWorkbook();
@@ -170,32 +174,32 @@ public class ParseExcelUtils {
         cell.setCellValue("APIVersionNum");
         cell = row.createCell(14);
         cell.setCellValue("maxParaNum");
+//        cell = row.createCell(15);
+//        cell.setCellValue("APIVersionSet");
+//        cell = row.createCell(16);
+//        cell.setCellValue("DBNum");
+//        cell = row.createCell(17);
+//        cell.setCellValue("serviceImplCall");
         cell = row.createCell(15);
-        cell.setCellValue("APIVersionSet");
-        cell = row.createCell(16);
-        cell.setCellValue("DBNum");
-        cell = row.createCell(17);
-        cell.setCellValue("serviceImplCall");
-        cell = row.createCell(18);
         cell.setCellValue("serviceImplCallNum");
-        cell = row.createCell(19);
-        cell.setCellValue("serviceCall");
-        cell = row.createCell(20);
-        cell.setCellValue("serviceCalled");
-        cell = row.createCell(21);
+//        cell = row.createCell(19);
+//        cell.setCellValue("serviceCall");
+//        cell = row.createCell(20);
+//        cell.setCellValue("serviceCalled");
+        cell = row.createCell(16);
         cell.setCellValue("maxServiceCall");
-        cell = row.createCell(22);
-        cell.setCellValue("serviceCallCate");
-        cell = row.createCell(23);
+//        cell = row.createCell(22);
+//        cell.setCellValue("serviceCallCate");
+        cell = row.createCell(17);
         cell.setCellValue("serviceCallPer");
-        cell = row.createCell(24);
+        cell = row.createCell(18);
         cell.setCellValue("maxServiceCalled");
-        cell = row.createCell(25);
-        cell.setCellValue("serviceCalledCate");
-        cell = row.createCell(26);
+//        cell = row.createCell(25);
+//        cell.setCellValue("serviceCalledCate");
+        cell = row.createCell(19);
         cell.setCellValue("serviceCalledPer");
-        cell = row.createCell(27);
-        cell.setCellValue("microserviceNum");
+//        cell = row.createCell(27);
+//        cell.setCellValue("microserviceNum");
 
         for (int i = 0; i < attributes.size(); i++) {
             try {
@@ -219,19 +223,19 @@ public class ParseExcelUtils {
                 row1.createCell(12).setCellValue(parseAttributes.getAPINum());
                 row1.createCell(13).setCellValue(parseAttributes.getAPIVersionNum());
                 row1.createCell(14).setCellValue(parseAttributes.getMaxParaNum());
-                row1.createCell(15).setCellValue(parseAttributes.getAPIVersionSet());
-                row1.createCell(16).setCellValue(parseAttributes.getDBNum());
-                row1.createCell(17).setCellValue(parseAttributes.getServiceImplCall().toString());
-                row1.createCell(18).setCellValue(parseAttributes.getServiceImplCallNum().toString());
-                row1.createCell(19).setCellValue(parseAttributes.getServiceCall().toString());
-                row1.createCell(20).setCellValue(parseAttributes.getServiceCalled().toString());
-                row1.createCell(21).setCellValue(parseAttributes.getMaxServiceCall().toString());
-                row1.createCell(22).setCellValue(parseAttributes.getServiceCallCate().toString());
-                row1.createCell(23).setCellValue(parseAttributes.getServiceCallPer().toString());
-                row1.createCell(24).setCellValue(parseAttributes.getMaxServiceCalled().toString());
-                row1.createCell(25).setCellValue(parseAttributes.getServiceCalledCate().toString());
-                row1.createCell(26).setCellValue(parseAttributes.getServiceCalledPer().toString());
-                row1.createCell(27).setCellValue(parseAttributes.getMicroserviceNum().toString());
+//                row1.createCell(15).setCellValue(parseAttributes.getAPIVersionSet());
+//                row1.createCell(16).setCellValue(parseAttributes.getDBNum());
+//                row1.createCell(17).setCellValue(parseAttributes.getServiceImplCall().toString());
+                row1.createCell(15).setCellValue(parseAttributes.getServiceImplCallNum().toString());
+//                row1.createCell(19).setCellValue(parseAttributes.getServiceCall().toString());
+//                row1.createCell(20).setCellValue(parseAttributes.getServiceCalled().toString());
+                row1.createCell(16).setCellValue(parseAttributes.getMaxServiceCall().toString());
+//                row1.createCell(22).setCellValue(parseAttributes.getServiceCallCate().toString());
+                row1.createCell(17).setCellValue(parseAttributes.getServiceCallPer().toString());
+                row1.createCell(18).setCellValue(parseAttributes.getMaxServiceCalled().toString());
+//                row1.createCell(25).setCellValue(parseAttributes.getServiceCalledCate().toString());
+                row1.createCell(19).setCellValue(parseAttributes.getServiceCalledPer().toString());
+//                row1.createCell(27).setCellValue(parseAttributes.getMicroserviceNum().toString());
             }catch (NullPointerException e){
                 e.printStackTrace();
                 System.out.println("a piece of data reading error ...");
@@ -239,7 +243,7 @@ public class ParseExcelUtils {
             }
         }
         try {
-            FileOutputStream fos = new FileOutputStream("E:/work_space/final-data.xls");
+            FileOutputStream fos = new FileOutputStream(finalPath);
             workbook.write(fos);
             workbook.close();
             fos.close();
@@ -250,6 +254,50 @@ public class ParseExcelUtils {
         }
         return true;
 
+    }
+
+    public static boolean outPutFinalCSV(List<ParseAttributes> attributes, String finalPath) {
+        // 使用 FileWriter 来写入 CSV 文件
+        try (FileWriter writer = new FileWriter(finalPath)) {
+            // 写入表头
+            writer.append("sysName,serviceName,releases,codeSize,entityNum,entityAttributeNum,aveEntityAttribute,controllerNum,interfaceNum,abstractClassNum,serviceClassNum,dtoObjectNum,APINum,APIVersionNum,maxParaNum,serviceImplCallNum,maxServiceCall,serviceCallPer,maxServiceCalled,serviceCalledPer\n");
+
+            // 遍历 attributes 列表，将每个对象的属性写入 CSV 文件
+            for (ParseAttributes parseAttributes : attributes) {
+                try {
+                    // 将每个属性值写入 CSV 文件
+                    writer.append(parseAttributes.getSysName() + ",");
+                    writer.append(parseAttributes.getServiceName() + ",");
+                    writer.append(parseAttributes.getReleases() + ",");
+                    writer.append(parseAttributes.getCodeSize() + ",");
+                    writer.append(parseAttributes.getEntityNum() + ",");
+                    writer.append(parseAttributes.getEntityAttributeNum() + ",");
+                    writer.append(parseAttributes.getAveEntityAttribute() + ",");
+                    writer.append(parseAttributes.getControllerNum() + ",");
+                    writer.append(parseAttributes.getInterfaceNum() + ",");
+                    writer.append(parseAttributes.getAbstractClassNum() + ",");
+                    writer.append(parseAttributes.getServiceClassNum() + ",");
+                    writer.append(parseAttributes.getDtoObjectNum() + ",");
+                    writer.append(parseAttributes.getAPINum() + ",");
+                    writer.append(parseAttributes.getAPIVersionNum() + ",");
+                    writer.append(parseAttributes.getMaxParaNum() + ",");
+                    writer.append(parseAttributes.getServiceImplCallNum() + ",");
+                    writer.append(parseAttributes.getMaxServiceCall() + ",");
+                    writer.append(parseAttributes.getServiceCallPer() + ",");
+                    writer.append(parseAttributes.getMaxServiceCalled() + ",");
+                    writer.append(parseAttributes.getServiceCalledPer() + "\n");
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    System.out.println("数据读取错误...");
+                    continue;
+                }
+            }
+            return true;
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.out.println("写入 CSV 文件时发生错误...");
+            return false;
+        }
     }
 
 }

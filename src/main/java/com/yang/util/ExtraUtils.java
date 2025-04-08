@@ -22,7 +22,10 @@ import org.eclipse.jgit.api.errors.JGitInternalException;
 import org.eclipse.jgit.lib.Ref;
 import org.yaml.snakeyaml.Yaml;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -35,7 +38,7 @@ public class ExtraUtils {
      * @param reposPath 抽取当前文件路径下的微服务系统信息
      * @return
      */
-    public static boolean  extraDataInDir(String reposPath) {
+    public static String  extraDataInDir(String reposPath) {
         String[] strings = reposPath.split("/");
         String sysName = strings[strings.length-1];
         List<String> microservicePaths;
@@ -51,7 +54,7 @@ public class ExtraUtils {
         } catch (IOException e) {
             e.printStackTrace();
             System.out.println("error occurring when opening services dir ...");
-            return false;
+            return "parse error";
         }
 
         // 针对每一个微服务
@@ -66,8 +69,8 @@ public class ExtraUtils {
             parseAttributesFromSvc(parseAttributes,microservicePath,filePathToMicroserviceName,microserviceCallResults);
             attributes.add(parseAttributes);
         }
-        transData2Excel(attributes);
-        return true;
+
+        return transData2Excel(attributes);
     }
 
     /**
@@ -322,7 +325,7 @@ public class ExtraUtils {
     }
 
 
-    private static boolean transData2Excel(List<ParseAttributes> attributes){
+    private static String transData2Excel(List<ParseAttributes> attributes){
         HSSFWorkbook workbook = new HSSFWorkbook();
         HSSFSheet sheet = workbook.createSheet("data");
         HSSFRow row = sheet.createRow(0);
@@ -400,8 +403,10 @@ public class ExtraUtils {
                 continue;
             }
         }
+        String dataPath = "D:/work_space/"+attributes.get(0).getSysName()+"-data.xls";
         try {
-            FileOutputStream fos = new FileOutputStream("E:/work_space/"+attributes.get(0).getSysName()+"-data.xls");
+            System.out.println("attributes.get(0).getSysName()" +attributes.get(0).getSysName());
+            FileOutputStream fos = new FileOutputStream(dataPath);
             System.out.println("./"+System.currentTimeMillis()+"-"+attributes.get(0).getSysName()+"-data.xls");
             workbook.write(fos);
             workbook.close();
@@ -409,9 +414,9 @@ public class ExtraUtils {
         } catch (IOException e) {
             e.printStackTrace();
             System.out.println("error occurring when opening excel file ...");
-            return false;
+            return "parse error";
         }
-        return true;
+        return dataPath;
 
     }
 

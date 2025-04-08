@@ -1,18 +1,19 @@
 package com.yang;
 
-import com.yang.util.ExtraUtils;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
+@SpringBootApplication
 public class Application {
 
 
-    public static void main(String[] args) {
+        public static void main(String[] args) {
+            SpringApplication.run(Application.class, args);
 
-        String reposPath = "E:/work_space/app2/Scblogs";
-//
-        ExtraUtils.extraDataInDir(reposPath);
+
+//        String reposPath = "D:/code/projects/refactor-projects/PropertyManagementCloud-master/PropertyManagementCloud-master";
+////
+//        ExtraUtils.extraDataInDir(reposPath);
 
 //
 //        String pattern = "/(?i)v\\d+(\\.\\d+)?";
@@ -25,4 +26,5 @@ public class Application {
 //            System.out.println(true);
 
     }
+
 }
